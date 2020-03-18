@@ -1,5 +1,5 @@
 {
-  "appId": "io.ionic.starter",
+  "appId": "ionic.applepay.wguilherme",
   "appName": "ionic-apple-pay",
   "bundledWebRuntime": false,
   "npmClient": "npm",
