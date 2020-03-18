@@ -1,7 +1,8 @@
 {
   "name": "ionic-apple-pay",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }
