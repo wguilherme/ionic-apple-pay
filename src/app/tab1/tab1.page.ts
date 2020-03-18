@@ -46,8 +46,8 @@ export class Tab1Page {
   supportedNetworks: any = ['visa', 'amex'];
   merchantCapabilities: any = ['3ds', 'debit', 'credit'];
   merchantIdentifier: string = 'merchant.apple.test';
-  currencyCode: string = 'GBP';
-  countryCode: string = 'GB';
+  currencyCode: string = 'BRL';
+  countryCode: string = 'BR';
   billingAddressRequirement: any = ['name', 'email', 'phone'];
   shippingAddressRequirement: any = 'none';
   shippingType: string = "shipping"
