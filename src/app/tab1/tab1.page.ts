@@ -11,39 +11,35 @@ export class Tab1Page {
 
   items: any = [
     {
-      label: '3 x Basket Items',
+      label: 'Premium Account',
       amount: 49.99
     },
     {
-      label: 'Next Day Delivery',
-      amount: 3.99
-    },
-    {
-      label: 'My Fashion Company',
-      amount: 53.98
+      label: 'Extended Support',
+      amount: 9.99
     }
   ];
   shippingMethods: any = [
     {
-      identifier: 'NextDay',
-      label: 'NextDay',
-      detail: 'Arrives tomorrow by 5pm.',
-      amount: 3.99
+      identifier: 'Plan1',
+      label: 'Next Week',
+      detail: 'Arrives next week',
+      amount: 1.99
     },
     {
-      identifier: 'Standard',
-      label: 'Standard',
-      detail: 'Arrive by Friday.',
-      amount: 4.99
+      identifier: 'Plan2',
+      label: 'Next Day',
+      detail: 'Arrives tomorrow.',
+      amount: 9.99
     },
     {
-      identifier: 'SaturdayDelivery',
-      label: 'Saturday',
-      detail: 'Arrive by 5pm this Saturday.',
-      amount: 6.99
+      identifier: 'Plan2',
+      label: 'Now!',
+      detail: 'Arrive in 30 minutes',
+      amount: 19.99
     }
   ];
-  supportedNetworks: any = ['visa', 'amex'];
+  supportedNetworks: any = ['visa', 'mastercard'];
   merchantCapabilities: any = ['3ds', 'debit', 'credit'];
   merchantIdentifier: string = 'merchant.apple.test';
   currencyCode: string = 'BRL';
@@ -113,7 +109,7 @@ export class Tab1Page {
   async presentAlert(message) {
     const alert = await this.alertController.create({
       header: 'Alert',
-      subHeader: 'Ionic 4 Apple Pay',
+      subHeader: 'Ionic 5 Apple Pay',
       message: message,
       buttons: ['OK']
     });
