@@ -10,14 +10,16 @@ import { AlertController } from '@ionic/angular';
 export class Tab1Page {
 
   items: any = [
+
+    {
+      label: 'Extended Support',
+      amount: 9.99
+    },
     {
       label: 'Premium Account',
       amount: 49.99
     },
-    {
-      label: 'Extended Support',
-      amount: 9.99
-    }
+   
   ];
   shippingMethods: any = [
     {
