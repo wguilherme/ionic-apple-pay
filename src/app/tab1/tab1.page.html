@@ -9,82 +9,11 @@
 
 
 <ion-content class="main-div">
-  <div padding-top style="height: 100%; margin: 40% 0;">
-    <!-- <ion-img class="apple" src="assets/ios.png"></ion-img> -->
-    <!-- <ion-text padding-horizontal class="help-text">Ideally, you should check if Apple Pay is enabled in background, and
-      accordingly change
-      your button text
-      to "Setup Apple Pay" / "Pay with Apple Pay"</ion-text> -->
-  
 
-
-
-    <!-- <ion-list-header margin-top color="dark">Payment Options</ion-list-header> -->
-
-    <!-- <ion-list>
-      <ion-list-header>Items</ion-list-header>
-      <ion-item>
-        <ion-icon slot="start" name="play"></ion-icon>
-        <ion-label>{{items[0].label}}</ion-label>
-        <ion-label slot="end">{{currencyCode}} {{items[0].amount}}</ion-label>
-      </ion-item>
-      <ion-list-header>Delivery Mode</ion-list-header>
-      <ion-item>
-        <ion-icon slot="start" name="play"></ion-icon>
-        <ion-label>{{items[1].label}}</ion-label>
-        <ion-label slot="end">{{currencyCode}} {{items[1].amount}}</ion-label>
-      </ion-item>
-      <ion-list-header>Total</ion-list-header>
-      <ion-item>
-        <ion-icon slot="start" name="play"></ion-icon>
-        <ion-label>{{items[2].label}}</ion-label>
-        <ion-label slot="end">{{currencyCode}} {{items[2].amount}}</ion-label>
-      </ion-item>
-    </ion-list> -->
-   
-
-    <!-- <ion-row padding-horizontal margin-top>
-      <ion-col class="bold">
-        Shipping Type
-      </ion-col>
-      <ion-col>
-        Shipping
-      </ion-col>
-    </ion-row>
-    <ion-row padding-horizontal margin-top>
-      <ion-col class="bold">
-        Country
-      </ion-col>
-      <ion-col>
-        Great Britain (GB)
-      </ion-col>
-    </ion-row>
-    <ion-row padding-horizontal margin-top>
-      <ion-col class="bold">
-        Billing Name
-      </ion-col>
-      <ion-col>
-        Enappd
-      </ion-col>
-    </ion-row>
-    <ion-row padding-horizontal margin-top>
-      <ion-col class="bold">
-        Billing Email
-      </ion-col>
-      <ion-col>
-        admin@enappd.com
-      </ion-col>
-    </ion-row>
-    <ion-row padding-horizontal margin-vertical>
-      <ion-col class="bold">
-        Billing Phone
-      </ion-col>
-      <ion-col>
-        9213213343
-      </ion-col>
-    </ion-row> -->
-
-
+  <ion-grid>
+  <ion-row padding-top style="height: 100%; margin: 40% 0;">
+    <ion-col>
+ 
     <ion-card class="ion-padding">
       <ion-card-header>
         <!-- <ion-card-subtitle>50% off</ion-card-subtitle> -->
@@ -103,6 +32,7 @@
       </ion-button>
       <p class="ion-text-center" (click)="checkApplePayValid()">Check Device</p>
     </ion-card>
-
-  </div>
+  </ion-col>
+  </ion-row>
+</ion-grid>
 </ion-content>
