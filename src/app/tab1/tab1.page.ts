@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ApplePay } from '@ionic-native/apple-pay/ngx';
 import { AlertController } from '@ionic/angular';
-
+import { RouterModule, Routes, Router } from '@angular/router';
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -49,7 +49,10 @@ export class Tab1Page {
   billingAddressRequirement: any = ['name', 'email', 'phone'];
   shippingAddressRequirement: any = 'none';
   shippingType: string = "shipping"
-  constructor(private applePay: ApplePay, public alertController: AlertController) { }
+  constructor(
+    private applePay: ApplePay,
+    public alertController: AlertController,
+    private route: Router) { }
 
   async checkApplePayValid() {
     await this.applePay.canMakePayments().then((message) => {
@@ -83,6 +86,9 @@ export class Tab1Page {
       this.applePay.makePaymentRequest(order).then(message => {
         console.log(message);
         this.applePay.completeLastTransaction('success');
+        //redirect to success page
+        this.route.navigate(['/tabs/tab2']);
+
       }).catch((error) => {
         console.log(error);
         this.applePay.completeLastTransaction('failure');
@@ -118,4 +124,6 @@ export class Tab1Page {
 
     await alert.present();
   }
+
+ 
 }

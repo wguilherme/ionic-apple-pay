@@ -1,3 +1,13 @@
 ion-content ion-toolbar {
   --background: translucent;
 }
+
+.container {
+  --background: linear-gradient(#242424, rgb(32, 32, 32));
+}
+
+.success-icon {
+  width: 50%;
+  height: 100%;
+  margin: 0px auto;
+}
